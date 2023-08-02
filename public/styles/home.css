@@ -1,3 +1,110 @@
+@import url('colors.css');
+/* Navbar styling */
 *{
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* body */
+body{
+    /* background-image: url(https://img.freepik.com/free-photo/professional-photographer-takes-close-up-with-slr-camera-generated-by-ai_188544-27651.jpg?size=626&ext=jpg&uid=R97350360&ga=GA1.2.328877591.1686104943&semt=ais_ai_generated); */
+    /* background-color: black; */
+    height: 100vh;
+}
+/* navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+nav .logo{
+    display: flex;
+    padding: 5px;
+}
+nav .logo .logo-img{
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+}
+nav .logo .logo-img img{
+    height: 100%;
+    width: 100%;
+}
+nav .logo .logo-name{
+height: 50px;
+}
+nav .links{
+    padding: 5px;
+}
+nav .links span{
+    padding: 5px;
+}
+nav .links span a{
+    text-decoration: none;
+}
+nav .socials{
+    border: 1px solid blue;
+    padding: 5px;
+}
+nav .socials i{
+    width: 50px;
+    border: 1px solid red;
+    margin: 50px;
+}
+ /* nav .socials .instagram{
+    width: 100px;
+    height: 50px;
+} */
+.instagram img{ 
+    height: 100%;
+    width: 100%;
+} 
+main{
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+main div{
+    display: flex;
+    
+}
+main div:nth-child(1){
+    align-items: start;
+    justify-content: center;
+    
+}
+main div:nth-child(2){
+    align-items: center;
+    justify-content: center;
+}
+main div:nth-child(3){
+    align-items: end;
+    justify-content: center;
+    
+}
+
+.gallery{
+    background-color: var(--dark-blue);
+    font-size: 2rem;
+    margin-top: 200px;
+    padding: 30px;
+    
+}
+.banner{
+    background-color: var(--dark-blue);
+    font-size: 2rem;
+    padding: 30px;
+
+}
+.banner p, .banner h5{
+    padding: 10px;
+}
+.contact{
+    background-color: var(--dark-blue);
+    font-size: 2rem;
+    margin-bottom: 200px;
+    padding: 30px;
 }
