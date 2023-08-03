@@ -23,10 +23,10 @@
             </span>
         </div>
         <div class="links">
-            <span><a href="{{}}">ABOUT</a></span>
-            <span><a href="">HOME</a></span>
-            <span><a href="">GALLERY</a></span>
-            <span><a href="">CONTACT</a></span>
+            <span><a href="{{url('/about')}}">ABOUT</a></span>
+            <span><a href="{{url('/')}}">HOME</a></span>
+            <span><a href="{{url('/gallery')}}">GALLERY</a></span>
+            <span><a href="{{url('/contact')}}">CONTACT</a></span>
         </div>
         <div class="socials">
             <div class="instagram">
