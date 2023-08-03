@@ -23,21 +23,21 @@
             </span>
         </div>
         <div class="links">
-            <span><a href="">ABOUT</a></span>
+            <span><a href="{{}}">ABOUT</a></span>
             <span><a href="">HOME</a></span>
             <span><a href="">GALLERY</a></span>
             <span><a href="">CONTACT</a></span>
         </div>
         <div class="socials">
-            <i class="instagram">
+            <div class="instagram">
                 <img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" alt="">
-            </span>
-            <i class="whatsapp">
-                {{-- <img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" alt=""> --}}
-            </span>
+            </div>
+            <div class="whatsapp">
+                <img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" alt="">
+            </div>
         </div>
     </nav>
-    <main>
+    <main class="animate-in">
         <div>
             <div class="gallery">
                 OUR WORK
