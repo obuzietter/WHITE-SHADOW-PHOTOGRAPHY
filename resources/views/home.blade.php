@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="{{ url('/styles/home.css') }}">
+    <link rel="stylesheet" href="{{ url('/styles/navbar.css') }}">
+
+    <script src="{{ url('/script/navbar.js')}}" defer></script>
     <script src="https://kit.fontawesome.com/5ce449abc0.js" crossorigin="anonymous"></script>
 
     <title>HOME - WHITE SHADOW</title>
@@ -14,28 +17,7 @@
 
 <body>
     <nav>
-        <div class="logo">
-            <span class="logo-img">
-                <img src="https://cdn-icons-png.flaticon.com/128/2983/2983067.png" alt="">
-            </span>
-            <span class="logo-name">
-                White Shadow
-            </span>
-        </div>
-        <div class="links">
-            <span><a href="{{url('/about')}}">ABOUT</a></span>
-            <span><a href="{{url('/')}}">HOME</a></span>
-            <span><a href="{{url('/gallery')}}">GALLERY</a></span>
-            <span><a href="{{url('/contact')}}">CONTACT</a></span>
-        </div>
-        <div class="socials">
-            <div class="instagram">
-                <img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" alt="">
-            </div>
-            <div class="whatsapp">
-                <img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" alt="">
-            </div>
-        </div>
+        
     </nav>
     <main class="animate-in">
         <div>

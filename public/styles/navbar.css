@@ -1,8 +1,7 @@
-
 /* navbar */
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 5px;
     animation:.8s ease forwards page-load;
 }
