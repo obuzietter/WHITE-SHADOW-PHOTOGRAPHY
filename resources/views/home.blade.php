@@ -19,6 +19,7 @@
     <nav>
         
     </nav>
+    
     <main class="animate-in">
         <div>
             <div class="gallery">

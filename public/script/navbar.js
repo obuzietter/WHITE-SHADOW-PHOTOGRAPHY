@@ -1,6 +1,6 @@
 const navbar = document.querySelector("nav")
 navbar.innerHTML = `
-<div class="logo">
+ <div class="logo">
             <span class="logo-img">
                 <img src="https://cdn-icons-png.flaticon.com/128/2983/2983067.png" alt="">
             </span>
@@ -9,10 +9,10 @@ navbar.innerHTML = `
             </span>
         </div>
         <div class="links">
-            <span><a href="{{url('/about')}}">ABOUT</a></span>
-            <span><a href="{{url('/')}}">HOME</a></span>
-            <span><a href="{{url('/gallery')}}">GALLERY</a></span>
-            <span><a href="{{url('/contact')}}">CONTACT</a></span>
+            <span><a href="/about">ABOUT</a></span>
+            <span><a href="/">HOME</a></span>
+            <span><a href="/gallery">GALLERY</a></span>
+            <span><a href="/contact">CONTACT</a></span>
         </div>
         <div class="socials">
             <div class="instagram">

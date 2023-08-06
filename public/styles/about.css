@@ -1,0 +1,60 @@
+@import url('colors.css');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+main .about-me{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .about-me .intro{
+    width: 500px;
+    background-color: var(--dark-blue);
+}
+main .about-me .intro h4{
+    padding: 10px;
+    font-size: 2rem;
+}
+main .about-me .intro p{
+    padding: 10px;
+    font-size: 1.5rem;
+}
+main .about-me .image{
+    width: 500px;
+}
+main .counts{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+main .counts div{
+    width: 250px;
+    height: 125px;
+    margin-top: -60px;
+    display: grid;
+    place-items: center;
+    background-color: var(--dark-blue);
+}
+main .counts div span{
+    font-size: 2rem;
+}
+
+main .about-business{
+        column-count: 2;
+        
+    
+}
+main .about-business .card{
+    height: 400px;
+}
