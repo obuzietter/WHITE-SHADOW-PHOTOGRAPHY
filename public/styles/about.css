@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 body{
     background-color: black;
@@ -15,11 +15,17 @@ main .about-me{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(https://img.freepik.com/free-photo/cute-boys-playing-nature-sunset-generated-by-ai_188544-29851.jpg?size=626&ext=jpg&uid=R97350360&ga=GA1.2.328877591.1686104943&semt=ais_ai_generated);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main .about-me .intro{
     width: 500px;
     background-color: var(--dark-blue);
+    transform: translateX(100px);
 }
 main .about-me .intro h4{
     padding: 10px;
@@ -30,7 +36,11 @@ main .about-me .intro p{
     font-size: 1.5rem;
 }
 main .about-me .image{
-    width: 500px;
+    width: 400px;
+}
+main .about-me .image img{
+    width: 100%;
+    
 }
 main .counts{
     height: 300px;
@@ -39,22 +49,67 @@ main .counts{
     /* align-items: center; */
 }
 main .counts div{
-    width: 250px;
-    height: 125px;
-    margin-top: -60px;
+    width: 350px;
+    height: 250px;
+    margin-top: -70px;
     display: grid;
     place-items: center;
     background-color: var(--dark-blue);
 }
 main .counts div span{
+    font-size: 3rem;
+    color: var(--orange);
+}
+main .counts div p{
     font-size: 2rem;
 }
-
 main .about-business{
-        column-count: 2;
-        
-    
+        columns: 2;
+        padding: 10px 200px;
+        gap: 0;
 }
 main .about-business .card{
     height: 400px;
+    padding: 10px 50px;
+}
+main .about-business .card:first-child{
+    background-color: var(--dark-blue);
+}
+main .about-business .card:nth-child(2){
+    background-color: var(--grey);
+    color: var(--dark-blue);
+}
+main .about-business .card:nth-child(3){
+    background-color: var(--grey);
+    color: var(--dark-blue);
+}
+main .about-business .card:last-child{
+    background-color: var(--dark-blue);
+}
+main .about-business .card h4{
+    font-size: 2rem;
+    padding: 20px 0px;
+}
+main .about-business .card p{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+main .regards{
+    padding: 50px 200px;
+    
+}
+main .regards .content{
+    padding: 50px 200px;
+    background-color: var(--dark-blue);
+    color: var(--grey);
+    text-align: center;
+}
+main .regards h3{
+    font-size: 2rem;
+}
+main .regards p{
+    font-size: 1.7rem;
+}
+footer{
+    text-align: center;
 }

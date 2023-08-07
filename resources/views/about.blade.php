@@ -27,7 +27,7 @@
                 </p>
             </div>
             <div class="image">
-                <img src="" alt="my-image">
+                <img src="https://images.pexels.com/photos/3833098/pexels-photo-3833098.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="my-image">
             </div>
         </section>
         <section class="counts">
@@ -77,14 +77,16 @@
 
         </section>
         <section class="regards">
-            <h3>
-                Let's Create Memories Together
-            </h3>
-            <p>
-                Feel free to reach out to me at [your contact information] for inquiries, bookings, or just to say hello. You can also connect with me on [mention your social media profiles] to see more of my work and stay updated on my latest projects.
-                Thank you for visiting my website and considering me to be a part of your special moments.
-                Warm regards, [Your Name]
-            </p>
+            <div class="content">
+                <h3>
+                    Let's Create Memories Together
+                </h3>
+                <p>
+                    Feel free to reach out to me at [your contact information] for inquiries, bookings, or just to say hello. You can also connect with me on [mention your social media profiles] to see more of my work and stay updated on my latest projects.
+                    Thank you for visiting my website and considering me to be a part of your special moments.
+                    Warm regards, [Your Name]
+                </p>
+            </div>
         </section>
     </main>
     <footer>
