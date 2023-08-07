@@ -19,8 +19,7 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::view('/', 'home'); 
 Route::view('/about', 'about'); 
-Route::view('/gallery', 'gallery'); 
+Route::get('/gallery', [ImageController::class, 'getImages']);
 Route::view('/contact', 'contact');  
 
 //route for getting images from the database
-Route::get('get-image', [ImageController::class, 'getImages']);

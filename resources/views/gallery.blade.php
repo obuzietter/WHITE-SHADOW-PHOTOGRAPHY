@@ -15,9 +15,12 @@
     </nav>
     <main>
         <div class="gallery">
+            @foreach ($images as $image)
             <div class="photo">
-                <img src="" alt="">
-            </div>
+                <img src="{{$image->path}}" alt="">
+            </div>  
+            @endforeach
+           
             
         </div>
     </main>
