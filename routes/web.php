@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ImageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,4 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'home'); 
 Route::view('/about', 'about'); 
 Route::view('/gallery', 'gallery'); 
-Route::view('/contact', 'contact'); 
+Route::view('/contact', 'contact');  
+
+//route for getting images from the database
+Route::get('get-image', [ImageController::class, 'getImages']);

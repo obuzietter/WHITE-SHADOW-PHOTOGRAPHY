@@ -1,0 +1,15 @@
+*{
+    border: 1px solid red;
+    background-color: black;
+}
+main .gallery{
+    columns: 4;
+}
+main .gallery .photo{
+    width: 300px;
+    height: auto;
+}
+main .gallery .photo img{
+    width: 300px;
+    height: auto;
+}
