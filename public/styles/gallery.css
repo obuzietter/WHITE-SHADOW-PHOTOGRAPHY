@@ -1,15 +1,23 @@
 *{
     border: 1px solid red;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: black;
 }
+main{
+    display: flex;
+    justify-content: center;
+}
 main .gallery{
-    columns: 4;
+    display: column;
+    columns: 4 ;
+    gap: 30px;
+    width: 80%;
 }
 main .gallery .photo{
-    width: 300px;
-    height: auto;
+    
 }
 main .gallery .photo img{
-    width: 300px;
-    height: auto;
+    width: 100%;
 }
