@@ -64,7 +64,7 @@
                 </div>
                 <input type="email" name="email" id="" placeholder="example@gmail.com">
                 <textarea name="review" id="" cols="" rows="5" placeholder="Enter message here"></textarea>
-                <button type="submit">Submit</button>
+                <button class="button-57" role="button"><span class="text">Submit</span><span>Send Review</span></button>
             </form>
         </div>
         </div>
