@@ -1,5 +1,6 @@
 /* navbar */
 nav{
+    background-color: black;
     display: flex;
     justify-content: space-around;
     padding: 5px;

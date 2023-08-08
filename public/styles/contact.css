@@ -1,8 +1,108 @@
+
+@import url('colors.css');
 *{
-    background-color: black;
+    /* background-color: black; */
     color: white;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+main{
+    /* background-image: url(https://img.freepik.com/premium-photo/girl-with-camera-that-says-black-girl_670382-4832.jpg?size=626&ext=jpg&uid=R97350360&ga=GA1.2.328877591.1686104943&semt=ais_ai_generated);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 90vh;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 1rem;
+    
+}
+
+.contact{
+background-color: var(--grey);
+}
+.contact div{
+    display: flex;
+    margin: 20px 30px;
+    cursor: default;
+    
+}
+.contact .title{
+    color: var(--orange);
+    font-size: 1.75rem;
+}
+.contact div .icon{
+    width: 50px;
+    height: 50px;
+}
+.contact div .icon img{
+    height: 100%;
+    width: 100%;
+}
+
+.contact div .text{
+    display: flex;
+    align-items: center;
+    padding: 0px 1em;
+    color: var(--dark-blue);
+    transition: .2s ease;
+    cursor: pointer;
+
+}
+.contact div .text:hover{
+    color: var(--orange);
+    text-decoration: underline;
+}
+.form{
+    background-color: var(--grey);
+    padding: 0 2rem;
+}
+.form form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+.form form .name-phone{
+    display: flex;
+    justify-content: space-between;
+}
+.form form .name-phone input{
+    width: 49%;
+}
+.form form input, textarea{
+    color: var(--dark-blue);
+    border: none;
+    padding: 5px;
+    font-size: 1.12rem;
+    outline: none;
+}
+.form form input:focus{
+    outline: 2px solid var(--light-blue);
+}
+textarea:focus{
+    outline: 2px solid var(--light-blue);
+}
+.form form button{
+    font-size: 1.12rem;
+    width: 250px;
+    align-self: center;
+}
+.map{
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+main iframe{
+    width: 100%;
+}
+footer{
+    text-align: center;
 }
