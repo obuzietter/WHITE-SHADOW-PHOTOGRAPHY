@@ -1,3 +1,4 @@
+@import url('colors.css');
 *{
     border: 1px solid red;
     margin: 0;
@@ -9,15 +10,27 @@ main{
     display: flex;
     justify-content: center;
 }
+main .hero{
+    color: white;
+}
 main .gallery{
     display: column;
     columns: 4 ;
-    gap: 30px;
+    column-gap: 1em;
     width: 80%;
 }
 main .gallery .photo{
-    
+    margin: 10px 0px;
 }
 main .gallery .photo img{
     width: 100%;
+    transition: .2s linear;
+}
+main .gallery .photo img:hover{
+    scale: 1.12;
+    box-shadow: 5px 5px 55px var(--orange);
+}
+footer{
+    text-align: center;
+    color: white;
 }

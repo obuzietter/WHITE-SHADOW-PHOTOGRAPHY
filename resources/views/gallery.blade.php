@@ -14,6 +14,9 @@
 
     </nav>
     <main>
+        <div class="hero">
+            <h1>GALLERY</h1>
+        </div>
         <div class="gallery">
             @foreach ($images as $image)
             <div class="photo">
@@ -25,6 +28,7 @@
         </div>
     </main>
     <footer>
+        &copy; 2023 by white shadow | All rights reserved.
     </footer>
 </body>
 </html>
