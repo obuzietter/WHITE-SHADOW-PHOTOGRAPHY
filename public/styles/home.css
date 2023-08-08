@@ -8,10 +8,10 @@
 }
 /* body */
 body{
-    /* background-image: url(https://wallpapercave.com/dwp1x/wp8027816.jpg);
+    background-image: url(https://img.freepik.com/premium-photo/girl-with-camera-that-says-black-girl_670382-4832.jpg?size=626&ext=jpg&uid=R97350360&ga=GA1.2.328877591.1686104943&semt=ais_ai_generated);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
     background-color: black;
     height: 100vh;
     overflow: hidden;
@@ -19,7 +19,7 @@ body{
 main{
     height: 90vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     color: white;
 }
 
@@ -30,6 +30,7 @@ main div{
 main div:nth-child(1){
     align-items: start;
     justify-content: center;
+    
     
 }
 main div:nth-child(2){

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{ url('/styles/home.css') }}">
     <link rel="stylesheet" href="{{ url('/styles/navbar.css') }}">
 
-    <script src="{{ url('/script/navbar.js')}}" defer></script>
+    <script src="{{ url('/script/navbar.js') }}" defer></script>
     <script src="https://kit.fontawesome.com/5ce449abc0.js" crossorigin="anonymous"></script>
 
     <title>HOME - WHITE SHADOW</title>
@@ -17,9 +17,9 @@
 
 <body>
     <nav>
-        
+
     </nav>
-    
+
     <main class="animate-in">
         <div>
             <div class="gallery">
@@ -36,8 +36,7 @@
         </div>
         <div>
             <div class="contact">
-                HOW TO FIND US
-            </div>
+                CONTACT </div>
         </div>
     </main>
     <footer>
