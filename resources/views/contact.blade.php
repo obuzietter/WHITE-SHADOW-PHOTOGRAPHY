@@ -57,7 +57,8 @@
             </div>
         </div>
         <div class="form">
-            <form action="" method="post">
+            <form action="{{url('/review')}}" method="post">
+                @csrf
                 <div class="name-phone">
                     <input type="text" name="name" id="" placeholder="Full Name">
                 <input type="tel" name="phone" id="" placeholder="Phone">

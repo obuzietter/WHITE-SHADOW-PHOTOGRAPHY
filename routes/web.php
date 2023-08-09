@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ImageController;
+use App\Http\Controllers\ReviewController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,4 +23,5 @@ Route::view('/about', 'about');
 Route::get('/gallery', [ImageController::class, 'getImages']);
 Route::view('/contact', 'contact');  
 
-//route for getting images from the database
+//route for sending reviews to the database
+Route::post("/review", [ReviewController::class,'sendData']);
