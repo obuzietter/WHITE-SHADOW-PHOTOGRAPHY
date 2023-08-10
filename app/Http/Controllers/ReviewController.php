@@ -6,13 +6,14 @@ use Illuminate\Http\Request;
 
 class ReviewController extends Controller
 {
-    function sendData(Request $request){
+    function sendData(){
         $review = new Review();
         $review->name = request('name');
         $review->phone = request('phone');
         $review->email =  request('email');  
         $review->review =   request('review');
         $review->save();
-        return $request->input();
+        return $review->save();
+        // return $request->input();
     }
 }
