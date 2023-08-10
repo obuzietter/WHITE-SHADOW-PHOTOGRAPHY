@@ -25,6 +25,8 @@ main .gallery{
 }
 main .gallery .photo{
     margin: 10px 0px;
+    padding: 5px;
+    background-color: aliceblue;
     /* animation: photoload 2s; */
     transform: translateX(300px);
     opacity: 0;
@@ -38,10 +40,11 @@ main .gallery .show{
 main .gallery .photo img{
     width: 100%;
     transition: .2s linear;
+    transform-origin: center;
 }
 main .gallery .photo img:hover{
     scale: 1.02;
-    box-shadow: 5px 5px 15px var(--orange);
+    /* box-shadow: 5px 5px 15px var(--orange); */
 }
 footer{
     text-align: center;
