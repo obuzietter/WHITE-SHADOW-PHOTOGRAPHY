@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{url('/styles/gallery.css')}}">
     <link rel="stylesheet" href="{{url('/styles/navbar.css')}}">
     <script src="{{ url('/script/navbar.js')}}" defer></script>
+    <script src="{{url('/script/galleryObserver.js')}}" defer></script>
     <title>GALLERY - WHITE SHADOW</title>
 </head>
 <body>
