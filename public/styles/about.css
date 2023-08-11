@@ -26,6 +26,9 @@ main .about-me .intro{
     width: 500px;
     background-color: var(--dark-blue);
     transform: translateX(100px);
+    overflow: hidden;
+    animation: grow-horizontal 1s ease-in-out;
+    /* mix-blend-mode: luminosity; */
 }
 main .about-me .intro h4{
     padding: 10px;
@@ -37,6 +40,8 @@ main .about-me .intro p{
 }
 main .about-me .image{
     width: 400px;
+    transform-origin: center;
+    animation: grow-horizontal 1s linear;
 }
 main .about-me .image img{
     width: 100%;
@@ -112,4 +117,29 @@ main .regards p{
 }
 footer{
     text-align: center;
+}
+
+@keyframes grow-horizontal{
+    from{
+        /* width: 0;
+        height: 0; */
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        /* width: 500px;
+        height: auto; */
+    }
+}
+@keyframes grow-vertical{
+    from{
+        opacity: 0;
+        /* height: 0;
+        width: 0; */
+    }
+    to{
+        opacity: 1;
+        /* width: 400px;
+        height: auto; */
+    }
 }

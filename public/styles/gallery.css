@@ -35,7 +35,7 @@ main .gallery .show{
     transition: 1s cubic-bezier(.02,.79,.53,1.11);
     opacity: 1;
     /* transform-origin: 60% 60%; */
-    transform: translateX(0px) rotate(360deg);
+    transform: translateX(0px);
 }
 main .gallery .photo img{
     width: 100%;
