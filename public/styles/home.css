@@ -26,7 +26,7 @@ main {
 
 main div {
     display: flex;
-    perspective: 500px;
+    
 }
 
 main div:nth-child(1) {
@@ -44,11 +44,10 @@ main div:nth-child(2) {
 main div:nth-child(3) {
     align-items: end;
     justify-content: center;
-
 }
 
 .gallery {
-    background-color: var(--dark-blue);
+    /* background-color: var(--dark-blue); */
     font-size: 2rem;
     margin-top: 200px;
     padding: 30px;
@@ -60,28 +59,29 @@ main div:nth-child(3) {
     position: relative;
     transform-style: preserve-3d;
     will-change: transform;
-    transition: transform .5s;
+    transition: .5s;
     cursor: pointer;
 }
 
 .gallery:hover {
     transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+    box-shadow: -10px 10px 30px var(--orange);
 }
 
 .gallery p {
     font: 700 1.5rem monospace;
-    text-shadow: var(--orange) 2px 5px;
+    text-shadow: var(--orange) 2px 2px;
     transition: .5s;
 }
 
 .gallery:hover p {
     transform: translateZ(50px);
-    scale: 1.2;
+    scale: 1.5;
     text-shadow: var(--orange) -10px 10px;
 }
 
 .banner {
-    background-color: var(--dark-blue);
+    /* background-color: var(--dark-blue); */
     font-size: 2rem;
     padding: 30px;
     animation: 1s ease forwards left-right;
@@ -93,7 +93,7 @@ main div:nth-child(3) {
 }
 
 .contact {
-    background-color: var(--dark-blue);
+    /* background-color: var(--dark-blue); */
     font-size: 2rem;
     margin-bottom: 200px;
     padding: 30px;
@@ -105,22 +105,23 @@ main div:nth-child(3) {
     position: relative;
     transform-style: preserve-3d;
     will-change: transform;
-    transition: transform .5s;
+    transition: .5s;
     cursor: pointer;
 }
 .contact:hover {
     transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+    box-shadow: -10px 10px 30px var(--orange);
 }
 
 .contact p {
     font: 700 1.5rem monospace;
-    text-shadow: var(--orange) 2px 5px;
+    text-shadow: var(--orange) 2px 2px;
     transition: .5s;
 }
 
 .contact:hover p {
     transform: translateZ(50px);
-    scale: 1.2;
+    scale: 1.5;
     text-shadow: var(--orange) -10px 10px;
 }
 footer {
