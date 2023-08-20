@@ -1,12 +1,14 @@
 @import url('colors.css');
+
 /* Navbar styling */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 /* body */
-body{
+body {
     background-image: url(https://img.freepik.com/premium-photo/girl-with-camera-that-says-black-girl_670382-4832.jpg?size=626&ext=jpg&uid=R97350360&ga=GA1.2.328877591.1686104943&semt=ais_ai_generated);
     background-position: center;
     background-repeat: no-repeat;
@@ -14,95 +16,136 @@ body{
     height: 100vh;
     overflow: hidden;
 }
-main{
+
+main {
     height: 90vh;
     display: flex;
     justify-content: center;
     color: white;
 }
 
-main div{
+main div {
     display: flex;
-    
+    perspective: 500px;
 }
-main div:nth-child(1){
+
+main div:nth-child(1) {
     align-items: start;
     justify-content: center;
-    
-    
+
+
 }
-main div:nth-child(2){
+
+main div:nth-child(2) {
     align-items: center;
     justify-content: center;
 }
-main div:nth-child(3){
+
+main div:nth-child(3) {
     align-items: end;
     justify-content: center;
-    
+
 }
 
-.gallery{
+.gallery {
     background-color: var(--dark-blue);
     font-size: 2rem;
     margin-top: 200px;
     padding: 30px;
     /* color: var(--orange);   */
-    animation:.8s ease forwards top-down;  
+    /* animation: .8s ease forwards top-down; */
+    /* .. */
+    border: 2px solid #555555;
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+    cursor: pointer;
 }
-.banner{
+.gallery:hover {
+  transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+}
+.gallery p{
+      font: 700 1.5rem monospace;
+       text-shadow: -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+     transition: .5s;
+}
+.gallery:hover p{
+transform: translateZ(50px);
+scale: 1.2;
+}
+.banner {
     background-color: var(--dark-blue);
     font-size: 2rem;
     padding: 30px;
-    animation:1s ease forwards left-right;
+    animation: 1s ease forwards left-right;
 }
-.banner p, .banner h5{
+
+.banner p,
+.banner h5 {
     padding: 10px;
 }
-.contact{
+
+.contact {
     background-color: var(--dark-blue);
     font-size: 2rem;
     margin-bottom: 200px;
     padding: 30px;
     /* color: var(--orange); */
-    animation:.8s ease forwards bottom-up;
+    animation: .8s ease forwards bottom-up;
 }
-footer{
+
+footer {
     color: white;
     text-align: center;
 }
 
-.animate-in{
-    animation:.8s ease forwards page-load;
+.animate-in {
+    animation: .8s ease forwards page-load;
 }
 
 @keyframes page-load {
-    from{
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
+
 @keyframes bottom-up {
-    from{
+    from {
         transform: translateY(1000px);
-        
-    }to{
+
+    }
+
+    to {
         transform: translateY(0);
-        
+
     }
 }
+
 @keyframes top-down {
-    from{
+    from {
         transform: translateY(-1000px);
-    }to{
+    }
+
+    to {
         transform: translateY(0);
     }
 }
+
 @keyframes left-right {
-    from{
+    from {
         transform: translateX(-1000px);
-    }to{
+    }
+
+    to {
         transform: translateY(0);
     }
 }

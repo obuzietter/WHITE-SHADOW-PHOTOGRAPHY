@@ -23,7 +23,7 @@
     <main class="animate-in">
         <div>
             <div class="gallery">
-                OUR WORK
+                <p>OUR WORK</p>
             </div>
         </div>
         <div>
@@ -36,7 +36,8 @@
         </div>
         <div>
             <div class="contact">
-                CONTACT </div>
+                <p>CONTACT</p> 
+            </div>
         </div>
     </main>
     <footer>
