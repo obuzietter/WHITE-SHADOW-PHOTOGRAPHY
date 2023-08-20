@@ -63,21 +63,23 @@ main div:nth-child(3) {
     transition: transform .5s;
     cursor: pointer;
 }
+
 .gallery:hover {
-  transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+    transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
 }
-.gallery p{
-      font: 700 1.5rem monospace;
-       text-shadow: -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
-     transition: .5s;
+
+.gallery p {
+    font: 700 1.5rem monospace;
+    text-shadow: var(--orange) 2px 5px;
+    transition: .5s;
 }
-.gallery:hover p{
-transform: translateZ(50px);
-scale: 1.2;
+
+.gallery:hover p {
+    transform: translateZ(50px);
+    scale: 1.2;
+    text-shadow: var(--orange) -10px 10px;
 }
+
 .banner {
     background-color: var(--dark-blue);
     font-size: 2rem;
@@ -96,9 +98,31 @@ scale: 1.2;
     margin-bottom: 200px;
     padding: 30px;
     /* color: var(--orange); */
-    animation: .8s ease forwards bottom-up;
+    /* animation: .8s ease forwards bottom-up; */
+    /* .. */
+    border: 2px solid #555555;
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+    cursor: pointer;
+}
+.contact:hover {
+    transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
 }
 
+.contact p {
+    font: 700 1.5rem monospace;
+    text-shadow: var(--orange) 2px 5px;
+    transition: .5s;
+}
+
+.contact:hover p {
+    transform: translateZ(50px);
+    scale: 1.2;
+    text-shadow: var(--orange) -10px 10px;
+}
 footer {
     color: white;
     text-align: center;
